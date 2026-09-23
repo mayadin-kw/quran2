@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node tests/logic.test.mjs && node tests/download.test.mjs && node tests/assets.test.mjs && python3 tests/index_integrity.py"
+  }
+}
