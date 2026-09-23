@@ -1,0 +1,15 @@
+{
+  "rules": {
+    "recitationSessions": {
+      "$uid": {
+        ".read": "auth != null && auth.uid === $uid",
+        ".write": "auth != null && auth.uid === $uid",
+        "$sessionId": {
+          ".validate": "newData.hasChildren(['surah', 'fromAyah', 'toAyah', 'startedAt'])"
+        }
+      }
+    },
+    ".read": false,
+    ".write": false
+  }
+}
